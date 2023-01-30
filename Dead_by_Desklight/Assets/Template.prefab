@@ -618,8 +618,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1299344533059694}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.04, y: 0.047998536, z: -0.01664502}
-  m_LocalScale: {x: 0.037499998, y: 0.0025, z: 0.037499998}
+  m_LocalPosition: {x: -0.039839998, y: 0.016870607, z: -0.003523536}
+  m_LocalScale: {x: 0.037499994, y: 0.0025, z: 0.037499994}
   m_Children:
   - {fileID: 4753365965025994}
   - {fileID: 4463537545405282}
@@ -659,7 +659,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1663194582280432}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.07026672, y: 0.025665283, z: -0.029968262}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4873513801995634}
@@ -759,8 +759,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1670149249643312}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.01, y: 0.047998536, z: 0.02685498}
-  m_LocalScale: {x: 0.037499998, y: 0.0025, z: 0.037499998}
+  m_LocalPosition: {x: 0.010159999, y: 0.016870607, z: 0.039976466}
+  m_LocalScale: {x: 0.037499994, y: 0.0025, z: 0.037499994}
   m_Children:
   - {fileID: 4562685270864352}
   - {fileID: 4696229492326710}
@@ -787,7 +787,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1286348691593112}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: -2.1899414, z: 0.18}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 50, y: 40, z: 50}
   m_Children:
   - {fileID: 4490692832777024}
@@ -843,8 +843,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1997305005505030}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.04, y: 0.047998536, z: 0.02710498}
-  m_LocalScale: {x: 0.0375, y: 0.0025000002, z: 0.0375}
+  m_LocalPosition: {x: -0.039839998, y: 0.016870607, z: 0.040226463}
+  m_LocalScale: {x: 0.037499998, y: 0.0025000002, z: 0.037499998}
   m_Children:
   - {fileID: 4995536860268948}
   - {fileID: 4126343806741942}
@@ -871,7 +871,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1863171799254378}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.802669, y: 0.08178711, z: -1.6748047}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 40, y: 40, z: 40}
   m_Children:
   - {fileID: 4154444230725060}
@@ -899,7 +899,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1293431420282864}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0498, y: 0.023620605, z: 0.0119018555}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.025, y: 0.025, z: 0.025}
   m_Children:
   - {fileID: 4430149655100980}
@@ -940,7 +940,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1761446489406424}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.013316715, y: -0.00879468, z: -0.028379882}
+  m_LocalPosition: {x: 0.05695001, y: 0.016870603, z: -0.058348145}
   m_LocalScale: {x: 0.046875, y: 0.0025, z: 0.046875}
   m_Children:
   - {fileID: 4990348098578624}
@@ -969,8 +969,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1805040725602016}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.01, y: 0.047998536, z: -0.01689502}
-  m_LocalScale: {x: 0.037499998, y: 0.0025, z: 0.037499998}
+  m_LocalPosition: {x: 0.010159999, y: 0.016870607, z: -0.0037735356}
+  m_LocalScale: {x: 0.037499994, y: 0.0025, z: 0.037499994}
   m_Children:
   - {fileID: 4477075119144106}
   - {fileID: 4754480868321178}
@@ -2466,12 +2466,6 @@ MonoBehaviour:
   button2: {fileID: 114490633346614336}
   button3: {fileID: 114564901513082602}
   button4: {fileID: 114581336314802002}
-  buttons:
-  - {fileID: 1997305005505030}
-  - {fileID: 1670149249643312}
-  - {fileID: 1299344533059694}
-  - {fileID: 1805040725602016}
-  - {fileID: 1663194582280432}
   generatortext: {fileID: 102720690395365822}
   killeroptionaltext: {fileID: 102278391028968804}
   disableKillerButton: {fileID: 1663194582280432}

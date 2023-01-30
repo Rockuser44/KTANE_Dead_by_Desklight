@@ -20,15 +20,6 @@ public class DeadByDesklightScript : MonoBehaviour {
    public KMSelectable button4;     //add button 4 for KillerButton
 
 
-   //Sound name list (names of sounds in SFX folder)
-   string[] Sounds = {"Trapper_trap_placed", "Trapper_trap_activated"};
-      /*/array of sound names used by audio.PlaySoundAtTransform(Sounds[i], transform);
-                           change [i] to whatever index is the correct name of the sound
-                           Alternatively just put the name in the line instead such as: audio.PlaySoundAtTransform("Trapper_trap_placed", transform);
-      names as follows:
-         0 = Trapper_trap_placed
-         1 = Trapper_trap_activated
-      /*/
    // Add texts generator count
    public TextMesh generatortext;
    // Add texts optionskillertexts
@@ -194,8 +185,6 @@ public class DeadByDesklightScript : MonoBehaviour {
 
       //Other random variables
 
-         private float speedX = 1, speedY = 1, speedZ = 1;
-
          private int predictedActionValue = 0;
             /*/predictedActionValue is an integer that represents the following possible actions:
                0 = Not Determined (aka error value)
@@ -240,6 +229,10 @@ public class DeadByDesklightScript : MonoBehaviour {
             //Trapper chances
             private decimal beartrapescapechance = 40m;     //chance of a bear-trapped survivor to free themselves if not interacted with by the killer
             private decimal beartraptrappedchance = 5m;     //chance of a healthy survivor to trap themselves in a bear-trap if not interacted with by the killer, and if they don't repair a generator
+
+      //Sounds
+
+                    
 
 
 
@@ -536,8 +529,8 @@ public class DeadByDesklightScript : MonoBehaviour {
    void KillerSetup()
    {  //Initial setup of killer stuff at bomb start
       //get random killer value
-         //killervalue = UnityEngine.Random.Range(0,3);
-         killervalue = 0;   //alternatively, force value for testing purposes
+         killervalue = UnityEngine.Random.Range(0,3);
+         //killervalue = 2;   //alternatively, force value for testing purposes
    
       //set up killer image
       button4image.sharedMaterial = killerOptions[killervalue];
@@ -610,6 +603,8 @@ public class DeadByDesklightScript : MonoBehaviour {
          killerOptionalButton.sharedMaterial = optionalInfoButtonTextureOptions[0];
          //Make optional info image material invisible
          killerOptionalImage.sharedMaterial = optionalInfoImageTextureOptions[0];
+         //make optional info text invisible
+         killeroptionaltext.text = "";
 
       //Start cloaked
       cloakedStatus = 0;
@@ -1514,8 +1509,6 @@ public class DeadByDesklightScript : MonoBehaviour {
       if(currentActiveBearTrapCount < maxBearTrapCount)
          {//if less than max bear-traps, increase current active bear-traps
          currentActiveBearTrapCount = currentActiveBearTrapCount + 1;
-         //Sound effect
-         audio.PlaySoundAtTransform("Trapper_trap_placed", transform);
          //Log new bear-trap count
          Debug.LogFormat("[DeadByDesklight #{0}] Current active bear-traps is now {1}.", ModuleId, currentActiveBearTrapCount);
          }
