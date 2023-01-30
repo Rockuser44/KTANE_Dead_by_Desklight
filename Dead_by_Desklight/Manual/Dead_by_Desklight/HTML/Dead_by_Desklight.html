@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Dead by Desklight — Keep Talking and Nobody Explodes Module</title>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/ktane-utils.js"></script>
+    <style>
+        table {
+            margin: 1em auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Dead by Desklight</span>
+            </div>
+            <div class="page-content">
+                <img src="img/Component/Dead by Desklight.svg" class="diagram">
+                <h2>On the Subject of Dead by Desklight</h2>
+                <p class="flavour-text">Hopefully it isn't as buggy as the real videogame.</p>
+
+                <p>This module contains four survivors in reading order, a generator icon and a killer icon. There may also be additional information displayed above the killer icon.</p>
+				<p>You must determine which button to press based upon which Dead by Daylight killer you are playing as and the states of the survivors.<br />
+					The module will defuse when all the survivors have either died or escaped.<br />
+				<p>Survivors start in the healthy state.</p>	
+				<ul>
+					<li>While healthy the survivors' portrait is revealed.</li>
+					<li>Pressing the button of a healthy survivor will chase them and injure them.</li>
+					<li>Pressing the button of an injured survivor will chase them and down them.</li>
+					<li>Pressing the button of a downed survivor will hook them.</li>
+					<li>Pressing the button of a hooked survivor will camp them, preventing them from being unhooked.</li>
+					<li>Once a survivor has been hooked long enough, they will die.</li>
+				</ul>
+				<p>If all remaining alive survivors are simultaneously hooked, they will immediately die.</p>
+				
+					<p>After you take an action, survivors may take an action of their own:</p>
+				<ul>	
+					<li>Survivors can heal themselves. (Downed -> Injured, Injured -> Healthy)</li>
+					<li>Survivors can unhook themselves. (Hooked -> Injured)</li>
+					<li>Survivors can repair generators which, once enough are repaired, will power the exit gates. </li>
+					<li>Survivors can escape through the exit gates once they are powered, although they are not guaranteed to do so immediately.</li>
+					(Survivor escapes have no negative affect on the module.)
+				</ul>
+				<p>The amount of generators left to repair can be seen to the right of the generator icon. 
+				Once the required number of generators have been repaired, the generator icon will change to show that survivors can now escape.</p>
+				</div>
+            <div class="page-footer relative-footer">Page 1 of 8</div>
+        </div>
+        <div class="page page-bg-02">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Dead by Desklight</span>
+            </div>
+            <div class="page-content">	
+					<p></p>			
+					At each stage of the module determine the correct action by following the action table within the relevant killer section.
+					If there are multiple survivors that the action can be applied to, use the Survivor Priority Table below to determine the correct choice.
+				<p>If you press an incorrect button you will incur a strike but the module will not reset.</p>
+
+					For image identification see the end of this manual.</p>
+					
+					<p><br /></p>
+					<h4>Survivor Priority Table</h4>
+					<p><strong>Lower</strong> value = <strong>Higher</strong> Priority<br />
+						In case of tied priorities, use position in reading order as a tie breaker.</p>
+						
+					<table>
+					<tr>
+						<th>Name</th><th>Healthy</th><th>Injured</th><th>Downed</th><th>Hooked</th>
+					</tr>
+					<tr>
+						<th>Dwight Fairfield</th><td>1</td><td>5</td><td>8</td><td>4</td>
+					</tr>
+					<tr>
+						<th>Meg Thomas</th><td>2</td><td>6</td><td>7</td><td>3</td>
+					</tr>
+					<tr>
+						<th>Claudette Morel</th><td>3</td><td>7</td><td>6</td><td>2</td>
+					</tr>
+					<tr>
+						<th>Jake Park</th><td>4</td><td>8</td><td>5</td><td>1</td>
+					</tr>
+					<tr>
+						<th>Nea Karlsson</th><td>5</td><td>1</td><td>4</td><td>8</td>
+					</tr>
+					<tr>
+						<th>Laurie Strode</th><td>6</td><td>2</td><td>3</td><td>7</td>
+					</tr>
+					<tr>
+						<th>Ace Visconti</th><td>7</td><td>3</td><td>2</td><td>6</td>
+					</tr>
+					<tr>
+						<th>William "Bill" Overbeck</th><td>8</td><td>4</td><td>1</td><td>5</td>
+					</tr>
+					</table>
+					
+            </div>
+            <div class="page-footer relative-footer">Page 2 of 8</div>
+        </div>
+        <div class="page page-bg-03">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Dead by Desklight</span>
+            </div>
+            <div class="page-content">
+                <h3>Evan MacMillan aka The Trapper:</h3>
+				<p>
+					The Trappers' power is to place bear traps that survivors can get caught and injured in.<br />
+
+					The maximum amount of active bear traps is calculated via the following:<br />
+					<ol>
+					<li>Start with a maximum of 3 Bear Traps</li>
+					<li>Take the first character of the serial number. If it is a letter, take the digital root of it's alphabetic position (where A = 1, B = 2… etc). Add 1 to this value.
+								<ul><li>If this value is 1 or 2, you are on an indoor map, reducing your maximum bear traps by 1.</li></ul>
+					<li>Take the second character of the serial number. If it is a letter, take the digital root of it's alphabetic position (where A = 1, B = 2… etc). Add 1 to this value.
+								<ul><li>If this value is 1 or 2, you have the Trapper Sack add-on increasing your maximum bear traps by 2.</li>
+								<li>If this value is 3 or 4, you have the Trapper Bag add-on increasing your maximum bear traps by 1.</li></ul>
+					</ol>
+					The number of currently active bear traps can be seen above the power icon.<br />
+					Pressing the killer icon will increase the number of active bear traps by 1.
+					Attempting to increase the amount of active bear traps higher than the maximum will award a strike.
+					A survivor getting caught in a bear trap will decrease the number of active bear traps by 1.
+				</p>
+					<h4>Trapper Action Table</h4>
+					<p>The Trapper prioritises which action should be taken based on the following:<br />
+					<strong>Lower</strong> value = <strong>Higher</strong> Priority<br /></p>
+				<table>
+					<tr>
+						<th>Value</th><th>Action</th>
+					</tr>
+					<tr>
+					<th>1</th><td>If there's only one survivor left alive, and they are healthy or injured, chase them.</td>
+					</tr>
+					<tr>
+					<th>2</th><td>If there are no escapes and the exit gates are powered make sure there are atleast 2 active bear traps if possible.</td>
+					</tr>
+					<tr>
+					<th>3</th><td>If any survivors have escaped, hook downed survivors.</td>
+					</tr>
+					<tr>
+					<th>4</th><td>Chase survivors caught in bear traps.</td>
+					</tr>
+					<tr>
+					<th>5</th><td>Make sure there is atleast 1 active bear trap.</td>
+					</tr>
+					<tr>
+					<th>6</th><td>Hook downed survivors.</td>
+					</tr>
+					<tr>
+					<th>7</th><td>If there are hooked survivors, and it is possible to do so, protect your sacrifice by making sure there are atleast 2 active bear traps.</td>
+					</tr>
+					<tr>
+					<th>8</th><td>Chase injured survivors.</td>
+					</tr>
+					<tr>
+					<th>9</th><td>Camp hooked survivors.</td>
+					</tr>
+					<tr>
+					<th>10</th><td>Make sure the maximum number of bear traps are active.</td>
+					</tr>
+					<tr>
+					<th>11</th><td>Chase healthy survivors.</td>
+					</tr>
+				</table>
+				<p>Note: If multiple survivors are caught in bear traps and you must chase one of them, use their Injured priority.</p>
+  
+            </div>
+            <div class="page-footer relative-footer">Page 3 of 8</div>
+        </div>
+		<div class="page page-bg-04">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Dead by Desklight</span>
+            </div>
+            <div class="page-content">
+                <h3>Philip Ojomo aka The Wraith:</h3>
+				<p>
+					The Wraith's power is to cloak to hide and sneak up on survivors.<br />
+				<ul><li>Pressing the killer icon will make you cloaked if you are uncloaked.</li>
+				<li>If you injure, down or hook a survivor you will become uncloaked.</li>
+				<li>The Wraith begins cloaked at the bombs' start.</li></ul>
+				If you are uncloaked, an image of The Wraith will be visible above the killer icon.<br />	
+				</p>
+					<h4>Wraith Action Table</h4>
+					<p>The Wraith prioritises which action should be taken based on the following:<br />
+					<strong>Lower</strong> value = <strong>Higher</strong> Priority<br /></p>
+				<table>
+					<tr>
+						<th>Value</th><th>Action</th>
+					</tr>
+					<tr>
+					<th>1</th><td>If your last action was to chase a healthy survivor, continue chasing them.</td>
+					</tr>
+					<tr>
+					<th>2</th><td>Hook downed survivors.</td>
+					</tr>
+					<tr>
+					<th>3</th><td>If your most recent action was to hook a survivor, become cloaked.</td>
+					</tr>
+					<tr>
+					<th>4</th><td>Chase injured survivors if you are cloaked.</td>
+					</tr>
+					<tr>
+					<th>5</th><td>If your most recent action was to camp a hooked survivor, then chase a healthy survivor if you are cloaked.</td>
+					</tr>
+					<tr>
+					<th>6</th><td>Camp hooked survivors.</td>
+					</tr>
+					<tr>
+					<th>7</th><td>Chase healthy survivors if you are cloaked.</td>
+					</tr>
+					<tr>
+					<th>8</th><td>Become cloaked if you are not.</td>
+					</tr>
+				</table>
+            </div>
+            <div class="page-footer relative-footer">Page 4 of 8</div>
+        </div>
+		<div class="page page-bg-05">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Dead by Desklight</span>
+            </div>
+            <div class="page-content">
+                <h3>Max Thompson Jr. aka The Hillbilly:</h3>
+				<p>
+					The hillbilly's power is a deadly chainsaw, capable of quickly injuring healthy survivors.
+					<ul><li>If your next action is to chase a healthy survivor, you must first press the killer icon to rev up your chainsaw.</li></ul></p>
+				<p>	The chainsaw's current temperature can be seen above the killer icon.<br />
+					<ul><li>Using your chainsaw will increase it's temperature by 40°C. </li>
+					<li>The chainsaw's temperature will decrease by 1°C every second of the bombs timer.</li>
+					<li>If the chainsaw's temperature goes over 99°C it will overheat and you will be unable to use the chainsaw again until it has reached 0°C.</li></ul>
+					If the chainsaw is overheated the temperature icon will be red and the killer icon will disappear.</p>
+
+				</p>
+					<h4>Hillbilly Action Table</h4>
+					<p>The Hillbilly prioritises which action should be taken based on the following:<br />
+					<strong>Lower</strong> value = <strong>Higher</strong> Priority<br /></p>
+				<table>
+					<tr>
+						<th>Value</th><th>Action</th>
+					</tr>
+					<tr>
+					<th>1</th><td>If you've just rev'd up your chainsaw, and there is a healthy survivor, chase them.</td>
+					</tr>
+					<tr>
+					<th>2</th><td>Hook downed survivors.</td>
+					</tr>
+					<tr>
+					<th>3</th><td>Chase injured survivors.</td>
+					</tr>
+					<tr>
+					<th>4</th><td>If your most recent action was to hook a survivor, camp a survivor.</td>
+					</tr>
+					<tr>
+					<th>5</th><td>Chase healthy survivors.</td>
+					</tr>
+
+				</table>
+
+            </div>
+            <div class="page-footer relative-footer">Page 5 of 8</div>
+        </div>
+		<div class="page page-bg-06">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Dead by Desklight</span>
+            </div>
+            <div class="page-content">
+                <h3>Image Identification</h3>
+			
+					<h4>Survivor Portraits:</h4>
+
+				<table align="left">
+					<tr>
+						<th>Name</th><th>Icon</th><th>Name</th><th>Icon</th>
+					</tr>
+					<tr>
+					<td align="right">Dwight Fairfield</td><td><img src="img/SurvivorPortraits/01Dwight.png" width="125"  height="125"/></td><td align="right">Nea Karlsson</td><td><img src="img/SurvivorPortraits/05Nea.png" width="125"  height="125"/></td>
+					</tr>
+					<tr>
+					<td align="right">Meg Thomas</td><td><img src="img/SurvivorPortraits/02Meg.png" width="125"  height="125"/></td><td align="right">Laurie Strode</td><td><img src="img/SurvivorPortraits/06Laurie.png" width="125"  height="125"/></td>
+					</tr>
+					<tr>
+					<td align="right">Claudette Morel</td><td><img src="img/SurvivorPortraits/03Claudette.png" width="125"  height="125"/></td><td align="right">Ace Visconti</td><td><img src="img/SurvivorPortraits/07Ace.png" width="125"  height="125"/></td>
+					</tr>
+					<tr>
+					<td align="right">Jake Park</td><td><img src="img/SurvivorPortraits/04Jake.png" width="125"  height="125"/></td><td align="right">William "Bill" Overbeck</td><td><img src="img/SurvivorPortraits/08Bill.png" width="125"  height="125"/></td>
+					</tr>
+
+				</table>
+            </div>
+            <div class="page-footer relative-footer">Page 6 of 8</div>
+        </div>
+		<div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Dead by Desklight</span>
+            </div>
+            <div class="page-content">
+
+				<h4>Health states:</h4>
+
+				<table align="left">
+					<tr>
+						<th>Status</th><th>Image</th><th>Status</th><th>Image</th>
+					</tr>
+					<tr>
+					<td align="right">Dead</td><td><img src="img/HealthStates/Dead.png" width="125"  height="125"/></td><td align="right">Hooked</td><td><img src="img/HealthStates/Hooked.png" width="125"  height="125"/></td>
+					</tr>
+					<tr>
+					<td align="right">Downed</td><td><img src="img/HealthStates/Downed.png" width="125"  height="125"/></td><td align="right">Injured</td><td><img src="img/HealthStates/Injured.png" width="125"  height="125"/></td>
+					</tr>
+					<tr>
+					<td align="right">Escaped</td><td><img src="img/HealthStates/Escaped.png" width="125"  height="125"/></td><td align="right">Caught in a <br />bear trap</td><td><img src="img/HealthStates/BearTrap.png" width="125"  height="125"/></td>
+					</tr>
+
+				</table>
+				<br />
+            </div>
+            <div class="page-footer relative-footer">Page 7 of 8</div>
+        </div>
+		<div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Dead by Desklight</span>
+            </div>
+            <div class="page-content">
+
+				<h4>Killer icons:</h4>
+
+				<table align="left">
+					<tr>
+						<th>Name</th><th>Image</th>
+					</tr>
+					<tr>
+					<td align="right">The Trapper</td><td><img src="img/KillerIcons/Power_Trapper.png" width="125"  height="125"/></td>
+					</tr>
+					<tr>
+					<td align="right">The Wraith</td><td><img src="img/KillerIcons/Power_Wraith.png" width="125"  height="125"/></td>
+					</tr>
+					<tr>
+					<td align="right">The Hillbilly</td><td><img src="img/KillerIcons/Power_Hillbilly.png" width="125"  height="125"/></td>
+					</tr>
+
+				</table>
+				<br />
+            </div>
+            <div class="page-footer relative-footer">Page 8 of 8</div>
+        </div>
+    </div>
+</body>
+</html>

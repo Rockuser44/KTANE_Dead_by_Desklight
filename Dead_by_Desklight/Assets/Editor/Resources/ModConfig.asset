@@ -14,7 +14,9 @@ MonoBehaviour:
   id: DeadByDesklight
   title: Dead by Desklight
   author: TonyNoNose
-  description: 
+  description: "\"Hopefully it isn't as buggy as the real videogame.\"\r\n\nYou must
+    determine which button to press based upon which Dead by Daylight killer you are
+    playing as and the states of the survivors.\r\n"
   version: 
   outputFolder: build
-  previewImage: {fileID: 0}
+  previewImage: {fileID: 2800000, guid: eb0efd623db519542870f468dc6f29a0, type: 3}
